@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PARTNERS } from "@/lib/content";
 
 export default function Partners() {
@@ -8,16 +9,21 @@ export default function Partners() {
           <p className="text-center text-xs font-medium tracking-[0.3em] uppercase text-dim">
             Trusted by teams across Algeria
           </p>
-          <div className="mt-8 grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+
+          <div className="mt-10 grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
             {PARTNERS.map((p) => (
               <div
                 key={p.name}
-                className="flex h-12 items-center justify-center"
+                className="group relative flex h-12 items-center justify-center"
                 title={p.name}
               >
-                <span className="font-nacelle text-sm font-semibold tracking-wide text-muted transition-colors hover:text-fg">
-                  {p.name}
-                </span>
+                <Image
+                  src={p.logo}
+                  alt={p.name}
+                  width={160}
+                  height={48}
+                  className="max-h-10 w-auto object-contain opacity-60 brightness-0 invert transition duration-300 group-hover:opacity-100"
+                />
               </div>
             ))}
           </div>

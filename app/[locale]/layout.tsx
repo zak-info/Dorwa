@@ -6,10 +6,8 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
 import AOSInit from "@/components/aos-init";
-import { routing, type Locale } from "@/i18n/routing";
+import { routing } from "@/i18n/routing";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -56,15 +54,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={dir} className="dark">
       <body
-        className={`${inter.variable} ${nacelle.variable} ${arabic.variable} ${bodyFont} bg-gray-950 text-base text-gray-200 antialiased`}
+        className={`${inter.variable} ${nacelle.variable} ${arabic.variable} ${bodyFont} bg-brand text-base text-fg antialiased`}
       >
         <NextIntlClientProvider>
           <AOSInit />
-          <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
-            <Header locale={locale as Locale} />
-            <main className="relative flex grow flex-col">{children}</main>
-            <Footer locale={locale as Locale} />
-          </div>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

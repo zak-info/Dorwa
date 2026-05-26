@@ -46,21 +46,26 @@ export const TEAM: TeamMember[] = [
   { name: { en: "Khalifa", ar: "خليفة" }, roleKey: "roleFilmmaker" },
 ];
 
-export type Partner = { name: string; logo?: string };
+export type Partner = { name: string; logo: string };
 
 export const PARTNERS: Partner[] = [
-  { name: "Ooredoo" },
-  { name: "Mobilis" },
-  { name: "Cosider" },
-  { name: "JS Kabylie" },
-  { name: "MCA" },
-  { name: "Chery" },
-  { name: "Lours O&G" },
-  { name: "OSCO" },
-  { name: "ProFert" },
-  { name: "HESP" },
-  { name: "Alscif" },
-  { name: "Hotel Bay Diab" },
+  { name: "Ooredoo", logo: "/partners/Ooredoo-Logo_CMYK_On-White-BG_FA-01-removebg-preview.png" },
+  { name: "Mobilis", logo: "/partners/ATM_Mobilis.svg-2048x716.png" },
+  { name: "Cosider", logo: "/partners/Cosider_Logo.svg" },
+  { name: "JS Kabylie", logo: "/partners/Logo_JS_Kabylie.svg-removebg-preview.png" },
+  { name: "MCA", logo: "/partners/MCA_logo.png" },
+  { name: "Chery", logo: "/partners/chery-seeklogo.png" },
+  { name: "Lours O&G", logo: "/partners/lours.png" },
+  { name: "OSCO", logo: "/partners/osco.png" },
+  { name: "ProFert", logo: "/partners/profert.png" },
+  { name: "HESP", logo: "/partners/logo-hesp-grang-format-removebg-preview.png" },
+  { name: "Alscif", logo: "/partners/Alscif-Logo-Vertical-Transparent-BG-2048x2048.png" },
+  { name: "ENTP", logo: "/partners/Logo_entp.png" },
+  { name: "ENSP", logo: "/partners/ENSP.png" },
+  { name: "GCB", logo: "/partners/GCB_Logo.svg-removebg-preview.png" },
+  { name: "AIFG", logo: "/partners/aifg-logo-png_seeklogo-477004-removebg-preview.png" },
+  { name: "GMS", logo: "/partners/gms-pr.png" },
+  { name: "Ministry of Housing", logo: "/partners/وزارة_السكن_والعمران_والمدينة.svg.png" },
 ];
 
 export type Project = {
