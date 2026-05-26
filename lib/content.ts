@@ -35,15 +35,16 @@ export const SERVICES: { slug: ServiceSlug; iconKey: string }[] = [
 export type TeamMember = {
   name: Bi;
   roleKey: "roleProducer" | "roleDOP" | "roleCreative" | "roleMusic" | "roleDesigner" | "roleFilmmaker";
+  photo: string;
 };
 
 export const TEAM: TeamMember[] = [
-  { name: { en: "Houssam", ar: "حسام" }, roleKey: "roleProducer" },
-  { name: { en: "Khaled", ar: "خالد" }, roleKey: "roleDOP" },
-  { name: { en: "Wael", ar: "وائل" }, roleKey: "roleCreative" },
-  { name: { en: "Adlan", ar: "عدلان" }, roleKey: "roleMusic" },
-  { name: { en: "Abdou", ar: "عبدو" }, roleKey: "roleDesigner" },
-  { name: { en: "Khalifa", ar: "خليفة" }, roleKey: "roleFilmmaker" },
+  { name: { en: "Houssam", ar: "حسام" }, roleKey: "roleProducer", photo: "/team/houssam.jpg" },
+  { name: { en: "Khaled", ar: "خالد" }, roleKey: "roleDOP", photo: "/team/khaled.jpg" },
+  { name: { en: "Wael", ar: "وائل" }, roleKey: "roleCreative", photo: "/team/wael.jpg" },
+  { name: { en: "Adlan", ar: "عدلان" }, roleKey: "roleMusic", photo: "/team/adlan.jpg" },
+  { name: { en: "Abdou", ar: "عبدو" }, roleKey: "roleDesigner", photo: "/team/abdou.jpg" },
+  { name: { en: "Khalifa", ar: "خليفة" }, roleKey: "roleFilmmaker", photo: "/team/khalifa.jpg" },
 ];
 
 export type Partner = { name: string; logo: string };

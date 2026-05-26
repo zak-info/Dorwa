@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
@@ -87,17 +88,29 @@ export default async function AboutPage({
               {TEAM.map((m, i) => (
                 <div
                   key={m.name.en}
-                  className="brand-surface rounded-2xl p-5 text-center"
+                  className="brand-surface group overflow-hidden rounded-2xl text-center"
                   data-aos="fade-up"
                   data-aos-delay={i * 60}
                 >
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-brand-strong bg-brand-elev text-lg font-semibold text-fg">
-                    {m.name[locale].slice(0, 1)}
+                  <div className="relative aspect-square w-full overflow-hidden bg-brand-elev">
+                    <Image
+                      src={m.photo}
+                      alt={m.name[locale]}
+                      fill
+                      sizes="(min-width: 1024px) 16vw, (min-width: 640px) 33vw, 50vw"
+                      className="object-cover grayscale transition duration-500 group-hover:grayscale-0 group-hover:scale-[1.03]"
+                    />
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-bg)]/70 via-transparent to-transparent"
+                    />
                   </div>
-                  <div className="mt-3 font-nacelle text-sm font-semibold text-fg">
-                    {m.name[locale]}
+                  <div className="p-4">
+                    <div className="font-nacelle text-sm font-semibold text-fg">
+                      {m.name[locale]}
+                    </div>
+                    <div className="mt-1 text-xs text-muted">{t(m.roleKey)}</div>
                   </div>
-                  <div className="mt-1 text-xs text-muted">{t(m.roleKey)}</div>
                 </div>
               ))}
             </div>
