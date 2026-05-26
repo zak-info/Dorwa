@@ -1,8 +1,9 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/hero-image-01.jpg";
 import type { Locale } from "@/i18n/routing";
+
+const SHOWREEL_YOUTUBE_ID = "ukBTxLGpHxM";
 
 export default async function HeroHome({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "Hero" });
@@ -64,15 +65,11 @@ export default async function HeroHome({ locale }: { locale: Locale }) {
           </div>
 
           <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1104}
-            thumbHeight={576}
+            youtubeId={SHOWREEL_YOUTUBE_ID}
+            thumbWidth={1280}
+            thumbHeight={720}
             thumbAlt={t("modalAlt")}
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080}
             label={tCommon("playReel")}
-            duration="3:47"
           />
         </div>
       </div>
