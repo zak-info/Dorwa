@@ -1,0 +1,135 @@
+{
+  "Brand": {
+    "name": "DORWA",
+    "tagline": "Visual Storytellers"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "Hero": {
+    "eyebrow": "Visual Storytellers",
+    "title": "Creating content for a digital world",
+    "lead": "DORWA is a full-service creative studio based in Algeria. We help brands stand out through cinematic content, sharp storytelling, and design that doesn't blink first.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "Watch our reel",
+    "modalAlt": "Showreel cover"
+  },
+  "Workflows": {
+    "eyebrow": "How we work",
+    "title": "From a blank page to a finished frame",
+    "lead": "Three phases. One team. End-to-end delivery for video, social, 3D, design, and web.",
+    "discoverTag": "Discover",
+    "discoverBody": "We start by understanding your brand, your audience, and the message you actually want to land — not the brief you copied from someone else.",
+    "produceTag": "Produce",
+    "produceBody": "Our directors, cinematographers, 3D artists, and designers turn the plan into work you can show your boss. Or your customers. Or your mom.",
+    "deliverTag": "Deliver",
+    "deliverBody": "Edits, exports, platform crops, motion variants — delivered ready to ship, in the formats your channels actually need."
+  },
+  "Services": {
+    "eyebrow": "What we do",
+    "title": "Five services. One studio.",
+    "lead": "Production excellence from pre to post — and everything between.",
+    "video": {
+      "title": "Video Production",
+      "blurb": "Cinematic commercials, brand films, and event coverage trusted by major Algerian companies."
+    },
+    "social": {
+      "title": "Social Media",
+      "blurb": "Platform-native content built for the scroll — short-form video, reels, and series that grow audiences."
+    },
+    "3d": {
+      "title": "3D & Animation",
+      "blurb": "Product visualizations, architectural walkthroughs, and motion graphics that explain what a photo can't."
+    },
+    "design": {
+      "title": "Graphic Design",
+      "blurb": "Modern branding across digital and print — identities, campaigns, and collateral that look like 2026."
+    },
+    "web": {
+      "title": "Web Design",
+      "blurb": "Responsive, fast, and built to convert. Sites that feel as good as the content you put on them."
+    }
+  },
+  "Testimonials": {
+    "title": "What clients say",
+    "lead": "A small selection of voices from the people we've worked with across Algeria.",
+    "categoryAll": "View all",
+    "categoryVideo": "Video",
+    "categorySocial": "Social",
+    "category3d": "3D",
+    "categoryDesign": "Design",
+    "categoryWeb": "Web"
+  },
+  "Cta": {
+    "title": "Let's tell your story",
+    "lead": "From a single TikTok to a full brand campaign — we'd love to hear what you're working on.",
+    "primary": "Start a project",
+    "secondary": "Browse our work"
+  },
+  "Footer": {
+    "studio": "Studio",
+    "services": "Services",
+    "follow": "Follow",
+    "address": "Ouargla, Algeria",
+    "phone": "+213 699 504 214",
+    "email": "contact@dorwaprod.com",
+    "whatsapp": "WhatsApp",
+    "rights": "All rights reserved.",
+    "terms": "Terms"
+  },
+  "About": {
+    "eyebrow": "About DORWA",
+    "title": "Unleashing creativity in the Valley of the Sun",
+    "intro": "Born in Hassi Messaoud and working across all of Algeria, DORWA is a team of producers, directors, cinematographers, 3D artists, and designers obsessed with one thing: making content people actually stop to watch.",
+    "missionTitle": "Our mission",
+    "missionBody": "Help brands cut through the noise with stories worth telling, told well. We bring big-studio production thinking to local-market budgets, and we ship.",
+    "teamTitle": "The team",
+    "teamLead": "Six creatives. One studio. Each role earned, not titled.",
+    "roleProducer": "Producer",
+    "roleDOP": "Director of Photography",
+    "roleCreative": "Creative Director",
+    "roleMusic": "Music Supervisor & Composer",
+    "roleDesigner": "Graphic Designer",
+    "roleFilmmaker": "Filmmaker"
+  },
+  "ServicesPage": {
+    "eyebrow": "Capabilities",
+    "title": "Comprehensive production excellence",
+    "lead": "We understand each project is unique. From pre-production planning through on-set execution to the meticulous details of post — we own the whole pipeline."
+  },
+  "Work": {
+    "eyebrow": "Selected work",
+    "title": "Recent projects",
+    "lead": "A snapshot of recent films, campaigns, and brand content we've shipped. Click any project to play."
+  },
+  "Contact": {
+    "eyebrow": "Get in touch",
+    "title": "Tell us what you're working on",
+    "lead": "Drop a line and we'll come back within one business day. For faster turnaround, WhatsApp is the fastest channel.",
+    "nameLabel": "Your name",
+    "namePlaceholder": "Salim Benali",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@company.com",
+    "companyLabel": "Company (optional)",
+    "companyPlaceholder": "Acme Co.",
+    "messageLabel": "What's the project?",
+    "messagePlaceholder": "We're launching a new product in September and need a campaign film + 3 social cuts.",
+    "submit": "Send message",
+    "submitting": "Sending…",
+    "successTitle": "Message sent",
+    "successBody": "Thanks — we'll get back to you within one business day.",
+    "errorBody": "Something went wrong. Please try WhatsApp or email instead.",
+    "whatsappLabel": "Chat on WhatsApp",
+    "callLabel": "Call us",
+    "emailLabelDirect": "Email us"
+  },
+  "Common": {
+    "switchLang": "العربية",
+    "playReel": "Play reel"
+  }
+}

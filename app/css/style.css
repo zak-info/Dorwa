@@ -1,0 +1,216 @@
+@import 'tailwindcss';
+
+/* Additional styles */
+@import './additional-styles/utility-patterns.css' layer(components);
+@import './additional-styles/theme.css';
+
+@plugin "@tailwindcss/forms" {
+  strategy: base;
+}
+
+@theme {
+  --font-inter: var(--font-inter), sans-serif;
+  --font-nacelle: var(--font-nacelle), sans-serif;
+  --font-arabic: var(--font-arabic), sans-serif;
+
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.5384;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5715;
+  --text-base: 0.9375rem;
+  --text-base--line-height: 1.5333;
+  --text-base--letter-spacing: -0.0125em;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.5;
+  --text-lg--letter-spacing: -0.0125em;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.5;
+  --text-xl--letter-spacing: -0.0125em;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 1.415;
+  --text-2xl--letter-spacing: -0.0268em;
+  --text-3xl: 1.75rem;
+  --text-3xl--line-height: 1.3571;
+  --text-3xl--letter-spacing: -0.0268em;
+  --text-4xl: 2.5rem;
+  --text-4xl--line-height: 1.1;
+  --text-4xl--letter-spacing: -0.0268em;
+  --text-5xl: 3.5rem;
+  --text-5xl--line-height: 1;
+  --text-5xl--letter-spacing: -0.0268em;
+  --text-6xl: 4rem;
+  --text-6xl--line-height: 1;
+  --text-6xl--letter-spacing: -0.0268em;
+  --text-7xl: 4.5rem;
+  --text-7xl--line-height: 1;
+  --text-7xl--letter-spacing: -0.0268em;
+
+  --animate-shine: shine 5s ease-in-out 500ms infinite;
+  --animate-gradient: gradient 6s linear infinite;
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes shine {
+    0% {
+      top: 0;
+      transform: scaleY(5);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.8;
+    }
+    20% {
+      top: 100%;
+      transform: scaleY(10);
+      opacity: 0;
+    }
+    100% {
+      top: 100%;
+      transform: scaleY(1);
+      opacity: 0;
+    }
+  }
+  @keyframes gradient {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+/* Brand theme tokens.
+   Default = Variant A (pure B&W cinematic).
+   Override per scope via [data-style="b" | "c" | "d"]. */
+:root,
+[data-style="a"] {
+  --brand-bg: #000000;
+  --brand-bg-elev: #0a0a0a;
+  --brand-surface: rgba(255, 255, 255, 0.04);
+  --brand-surface-2: rgba(255, 255, 255, 0.08);
+  --brand-border: rgba(255, 255, 255, 0.12);
+  --brand-border-strong: rgba(255, 255, 255, 0.25);
+  --brand-fg: #ffffff;
+  --brand-fg-muted: rgba(255, 255, 255, 0.65);
+  --brand-fg-dim: rgba(255, 255, 255, 0.45);
+  --brand-accent: #ffffff;
+  --brand-accent-soft: rgba(255, 255, 255, 0.85);
+  --brand-accent-fg: #000000;
+  --brand-ring: rgba(255, 255, 255, 0.5);
+  --brand-glow: rgba(255, 255, 255, 0.15);
+}
+
+[data-style="b"] {
+  --brand-bg: #08070a;
+  --brand-bg-elev: #11100d;
+  --brand-surface: rgba(201, 169, 97, 0.06);
+  --brand-surface-2: rgba(201, 169, 97, 0.1);
+  --brand-border: rgba(201, 169, 97, 0.18);
+  --brand-border-strong: rgba(201, 169, 97, 0.35);
+  --brand-fg: #f5ecd9;
+  --brand-fg-muted: rgba(245, 236, 217, 0.7);
+  --brand-fg-dim: rgba(245, 236, 217, 0.45);
+  --brand-accent: #c9a961;
+  --brand-accent-soft: #e0c987;
+  --brand-accent-fg: #0a0a0a;
+  --brand-ring: rgba(201, 169, 97, 0.5);
+  --brand-glow: rgba(201, 169, 97, 0.25);
+}
+
+[data-style="c"] {
+  --brand-bg: #0a0a0f;
+  --brand-bg-elev: #14141a;
+  --brand-surface: rgba(244, 63, 94, 0.06);
+  --brand-surface-2: rgba(244, 63, 94, 0.1);
+  --brand-border: rgba(244, 63, 94, 0.2);
+  --brand-border-strong: rgba(244, 63, 94, 0.4);
+  --brand-fg: #fafafa;
+  --brand-fg-muted: rgba(254, 226, 226, 0.7);
+  --brand-fg-dim: rgba(254, 226, 226, 0.45);
+  --brand-accent: #ef4444;
+  --brand-accent-soft: #f87171;
+  --brand-accent-fg: #ffffff;
+  --brand-ring: rgba(239, 68, 68, 0.55);
+  --brand-glow: rgba(239, 68, 68, 0.3);
+}
+
+[data-style="d"] {
+  --brand-bg: #03060a;
+  --brand-bg-elev: #0a1018;
+  --brand-surface: rgba(74, 222, 222, 0.05);
+  --brand-surface-2: rgba(74, 222, 222, 0.09);
+  --brand-border: rgba(74, 222, 222, 0.18);
+  --brand-border-strong: rgba(74, 222, 222, 0.4);
+  --brand-fg: #f0f9fb;
+  --brand-fg-muted: rgba(186, 230, 233, 0.7);
+  --brand-fg-dim: rgba(186, 230, 233, 0.45);
+  --brand-accent: #4adede;
+  --brand-accent-soft: #7eeaea;
+  --brand-accent-fg: #03161a;
+  --brand-ring: rgba(74, 222, 222, 0.55);
+  --brand-glow: rgba(74, 222, 222, 0.3);
+}
+
+/* Default-document background drives off the active brand-bg.
+   This means navigating into a [data-style] subtree shows the variant
+   palette; the top-level site uses the chosen default (A) until a winner
+   is picked. */
+body {
+  background-color: var(--brand-bg);
+  color: var(--brand-fg);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--brand-border, currentColor);
+  }
+}
+
+/* Reusable theme-aware utility classes */
+@layer components {
+  .brand-surface {
+    background-color: var(--brand-surface);
+    border: 1px solid var(--brand-border);
+  }
+  .brand-surface-2 {
+    background-color: var(--brand-surface-2);
+    border: 1px solid var(--brand-border);
+  }
+  .btn-accent {
+    background-color: var(--brand-accent);
+    color: var(--brand-accent-fg);
+  }
+  .btn-accent:hover {
+    background-color: var(--brand-accent-soft);
+  }
+  .btn-ghost {
+    background-color: transparent;
+    color: var(--brand-fg);
+    border: 1px solid var(--brand-border-strong);
+  }
+  .btn-ghost:hover {
+    background-color: var(--brand-surface);
+  }
+  .text-fg { color: var(--brand-fg); }
+  .text-muted { color: var(--brand-fg-muted); }
+  .text-dim { color: var(--brand-fg-dim); }
+  .text-accent { color: var(--brand-accent); }
+  .bg-brand { background-color: var(--brand-bg); }
+  .bg-brand-elev { background-color: var(--brand-bg-elev); }
+  .border-brand { border-color: var(--brand-border); }
+  .border-brand-strong { border-color: var(--brand-border-strong); }
+  .ring-brand { --tw-ring-color: var(--brand-ring); }
+}
