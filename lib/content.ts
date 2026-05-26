@@ -78,17 +78,19 @@ export type Project = {
   video?: string;
 };
 
+const DEFAULT_THUMB = "/project.jpg";
+
 export const PROJECTS: Project[] = [
-  { slug: "mca-training", title: { en: "MCA Training Centre", ar: "مركز تدريب MCA" }, client: "MCA", category: "video", thumb: "/images/workflow-01.png" },
-  { slug: "lours-oil-gas", title: { en: "Lours Oil & Gas", ar: "لورس للنفط والغاز" }, client: "Lours O&G", category: "video", thumb: "/images/workflow-02.png" },
-  { slug: "hotel-bay-diab", title: { en: "Hotel Bay Diab — Algiers", ar: "فندق باي دياب — الجزائر" }, client: "Hotel Bay Diab", category: "video", thumb: "/images/workflow-03.png" },
-  { slug: "ooredoo-campaign", title: { en: "Ooredoo Summer Campaign", ar: "حملة أوريدو الصيفية" }, client: "Ooredoo", category: "social", thumb: "/images/hero-image-01.jpg" },
-  { slug: "jsk-supporters", title: { en: "JSK Supporters Anthem", ar: "نشيد جماهير شبيبة القبائل" }, client: "JS Kabylie", category: "video", thumb: "/images/p1.png" },
-  { slug: "chery-launch", title: { en: "Chery — Model Launch", ar: "تشيري — إطلاق موديل" }, client: "Chery", category: "video", thumb: "/images/p2.png" },
-  { slug: "cosider-corp", title: { en: "Cosider — Corporate Film", ar: "كوسيدار — فيلم مؤسسي" }, client: "Cosider", category: "video", thumb: "/images/p3.png" },
-  { slug: "profert-3d", title: { en: "ProFert — Product 3D", ar: "بروفرت — تصوير ثلاثي الأبعاد" }, client: "ProFert", category: "3d", thumb: "/images/p4.png" },
-  { slug: "alscif-identity", title: { en: "Alscif — Brand Identity", ar: "السكيف — هوية بصرية" }, client: "Alscif", category: "design", thumb: "/images/p5.png" },
-  { slug: "hesp-website", title: { en: "HESP — Website", ar: "HESP — موقع الويب" }, client: "HESP", category: "web", thumb: "/images/p6.png" },
+  { slug: "mca-training", title: { en: "MCA Training Centre", ar: "مركز تدريب MCA" }, client: "MCA", category: "video", thumb: DEFAULT_THUMB },
+  { slug: "lours-oil-gas", title: { en: "Lours Oil & Gas", ar: "لورس للنفط والغاز" }, client: "Lours O&G", category: "video", thumb: DEFAULT_THUMB },
+  { slug: "hotel-bay-diab", title: { en: "Hotel Bay Diab — Algiers", ar: "فندق باي دياب — الجزائر" }, client: "Hotel Bay Diab", category: "video", thumb: DEFAULT_THUMB },
+  { slug: "ooredoo-campaign", title: { en: "Ooredoo Summer Campaign", ar: "حملة أوريدو الصيفية" }, client: "Ooredoo", category: "social", thumb: DEFAULT_THUMB },
+  { slug: "jsk-supporters", title: { en: "JSK Supporters Anthem", ar: "نشيد جماهير شبيبة القبائل" }, client: "JS Kabylie", category: "video", thumb: DEFAULT_THUMB },
+  { slug: "chery-launch", title: { en: "Chery — Model Launch", ar: "تشيري — إطلاق موديل" }, client: "Chery", category: "video", thumb: DEFAULT_THUMB },
+  { slug: "cosider-corp", title: { en: "Cosider — Corporate Film", ar: "كوسيدار — فيلم مؤسسي" }, client: "Cosider", category: "video", thumb: DEFAULT_THUMB },
+  { slug: "profert-3d", title: { en: "ProFert — Product 3D", ar: "بروفرت — تصوير ثلاثي الأبعاد" }, client: "ProFert", category: "3d", thumb: DEFAULT_THUMB },
+  { slug: "alscif-identity", title: { en: "Alscif — Brand Identity", ar: "السكيف — هوية بصرية" }, client: "Alscif", category: "design", thumb: DEFAULT_THUMB },
+  { slug: "hesp-website", title: { en: "HESP — Website", ar: "HESP — موقع الويب" }, client: "HESP", category: "web", thumb: DEFAULT_THUMB },
 ];
 
 export function bi(value: Bi, locale: Locale): string {
